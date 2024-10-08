@@ -1,0 +1,4 @@
+# The following (dangling) symbolic links are part of the tests. They
+# point to files that are unlikely to exists and cover error handling in
+# the application.
+golang-github-containers-image source: absolute-symbolic-link-target-in-source

@@ -1,0 +1,12 @@
+Rules:
+  rules:
+    -
+      Glob: debian/*
+      License: Apache-2.0
+      Copyright: Reinhard Tartler <siretart@tauware.de>
+    -
+      Glob: signature/fixtures/*
+      License: Apache-2.0
+      Copyright: Miloslav Trmac <mitr@redhat.com>
+      Justification: Git history
+      

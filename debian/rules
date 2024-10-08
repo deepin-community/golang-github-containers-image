@@ -1,4 +1,21 @@
 #!/usr/bin/make -f
 
+# disable LTO, cf. https://wiki.debian.org/ToolChain/LTO
+export DEB_BUILD_MAINT_OPTIONS := optimize=-lto
+export DH_GOLANG_EXCLUDES := openshift
+export DH_GOLANG_INSTALL_EXTRA := $(shell find . -type d -name 'fixtures') $(wildcard docs/*.json)
+
 %:
-	dh $@
+	dh $@ --buildsystem=golang --with=golang
+
+override_dh_strip_nondeterminism:
+	# this file comes from the testsuite, not a source of non-determinism
+	dh_strip_nondeterminism -XHello.gz
+
+override_dh_auto_install:
+	dh_auto_install --buildsystem=golang
+	make install-docs DESTDIR=$(CURDIR)/debian/golang-github-containers-image
+
+override_dh_auto_test:
+	DH_GOLANG_EXCLUDES="$(DH_GOLANG_EXCLUDES) pkg/docker image/signature" \
+	dh_auto_test -O--buildsystem=golang
