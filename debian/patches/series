@@ -1,0 +1,3 @@
+t-skip.patch
+avoid-openshift.patch
+disable-gpgtest.patch

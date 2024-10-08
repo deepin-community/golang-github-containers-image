@@ -1,0 +1,6 @@
+docs/*.5
+
+## tests accessing network:
+docker/docker_transport_test.go
+
+*/*/.gitignore

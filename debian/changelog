@@ -1,5 +1,526 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-containers-image (5.32.2-4) unstable; urgency=medium
 
-  * Initial release
+  * Upload to unstable
+  * golang-github-containers-image: set Multi-Arch: foreign
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Reinhard Tartler <siretart@tauware.de>  Tue, 10 Sep 2024 06:46:44 -0400
+
+golang-github-containers-image (5.32.2-3) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sun, 01 Sep 2024 09:35:01 -0400
+
+golang-github-containers-image (5.32.1-3) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sat, 17 Aug 2024 07:32:24 -0400
+
+golang-github-containers-image (5.32.1-2) experimental; urgency=medium
+
+  * Bump Standards-Version
+
+ -- Reinhard Tartler <siretart@tauware.de>  Thu, 15 Aug 2024 20:18:27 -0400
+
+golang-github-containers-image (5.32.1-1) experimental; urgency=medium
+
+  * New upstream version
+
+ -- Reinhard Tartler <siretart@tauware.de>  Thu, 15 Aug 2024 08:51:42 -0400
+
+golang-github-containers-image (5.32.0-2) experimental; urgency=medium
+
+  * Tighten breaks on containers/buildah
+
+ -- Reinhard Tartler <siretart@tauware.de>  Wed, 07 Aug 2024 07:38:14 -0400
+
+golang-github-containers-image (5.32.0-1) experimental; urgency=medium
+
+  * New upstream release: 5.32.0
+
+ -- Reinhard Tartler <siretart@tauware.de>  Tue, 06 Aug 2024 18:49:28 -0400
+
+golang-github-containers-image (5.30.2-2) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Reinhard Tartler <siretart@tauware.de>  Fri, 26 Jul 2024 22:52:59 +0200
+
+golang-github-containers-image (5.30.2-1) experimental; urgency=medium
+
+  * New upstream release
+  * Tighten dependency on sigstore
+  * Refresh and document debian/patches
+  * Enable image signing with rekor/sigstore
+  * Compile against docker 26
+
+ -- Reinhard Tartler <siretart@tauware.de>  Wed, 10 Jul 2024 07:54:50 -0400
+
+golang-github-containers-image (5.30.0-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sat, 16 Mar 2024 12:07:12 -0400
+
+golang-github-containers-image (5.29.2-3) experimental; urgency=medium
+
+  * Fix FTBFS against containers/storage 1.52
+
+ -- Reinhard Tartler <siretart@tauware.de>  Fri, 09 Feb 2024 12:37:17 -0500
+
+golang-github-containers-image (5.29.2-2) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Reinhard Tartler <siretart@tauware.de>  Tue, 06 Feb 2024 19:06:53 -0500
+
+golang-github-containers-image (5.29.2-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Reinhard Tartler <siretart@tauware.de>  Tue, 06 Feb 2024 06:57:15 -0500
+
+golang-github-containers-image (5.29.1-2) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Reinhard Tartler <siretart@tauware.de>  Wed, 24 Jan 2024 21:26:41 -0500
+
+golang-github-containers-image (5.29.1-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Reinhard Tartler <siretart@tauware.de>  Tue, 23 Jan 2024 18:52:02 -0500
+
+golang-github-containers-image (5.29.0-3) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sun, 21 Jan 2024 15:04:40 -0500
+
+golang-github-containers-image (5.29.0-2) experimental; urgency=medium
+
+  * enable image/signature/sigstore package
+
+ -- Reinhard Tartler <siretart@tauware.de>  Thu, 23 Nov 2023 14:50:58 +0000
+
+golang-github-containers-image (5.29.0-1) experimental; urgency=medium
+
+  * New upstream release
+  * simplify the avoid-rekor-patch further
+
+ -- Reinhard Tartler <siretart@tauware.de>  Wed, 22 Nov 2023 22:51:33 +0000
+
+golang-github-containers-image (5.28.0-4) unstable; urgency=medium
+
+  * Drop revert-x-exp-slices.patch, no longer needed, closes: #1055542
+    Fixes an FTBFS
+
+ -- Reinhard Tartler <siretart@tauware.de>  Wed, 08 Nov 2023 16:57:29 -0500
+
+golang-github-containers-image (5.28.0-3) unstable; urgency=medium
+
+  * build the containers/image/signature/sigstore package
+
+ -- Reinhard Tartler <siretart@tauware.de>  Fri, 27 Oct 2023 09:51:43 -0400
+
+golang-github-containers-image (5.28.0-2) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Reinhard Tartler <siretart@tauware.de>  Fri, 27 Oct 2023 06:48:43 -0400
+
+golang-github-containers-image (5.28.0-1) experimental; urgency=medium
+
+  * New upstream release
+  * tighten dependency on containers/storage
+  * Refresh patches
+  * add dependency on golang-github-mattn-go-sqlite3-dev
+  * Revert upstream commit updating x-exp-slices
+
+ -- Reinhard Tartler <siretart@tauware.de>  Fri, 22 Sep 2023 11:51:55 -0400
+
+golang-github-containers-image (5.26.1-2) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Reinhard Tartler <siretart@tauware.de>  Wed, 20 Sep 2023 08:30:09 -0400
+
+golang-github-containers-image (5.26.1-1) experimental; urgency=medium
+
+  * New upstream release
+  * debian/patches: drop support-ArgsEscaped-in-OCI-image-config.patch
+  * refresh patches
+  * debian/control: tighten dependency on containers/storage
+  * bump dependency on opencontainers/image-spec 1.10~rc4
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sat, 16 Sep 2023 17:57:48 -0400
+
+golang-github-containers-image (5.25.0-12) unstable; urgency=medium
+
+  * re-enable the pkg/cli package, unbreaks compilation of skopeo
+
+ -- Reinhard Tartler <siretart@tauware.de>  Tue, 12 Sep 2023 18:15:43 -0400
+
+golang-github-containers-image (5.25.0-11) unstable; urgency=medium
+
+  * backport: [PATCH] Fix TestOCI1IndexChooseInstanceByCompression on non-amd64
+
+ -- Reinhard Tartler <siretart@tauware.de>  Mon, 11 Sep 2023 20:11:16 -0400
+
+golang-github-containers-image (5.25.0-10) unstable; urgency=medium
+
+  * sigtore disablement: Exclude some more tests
+
+ -- Reinhard Tartler <siretart@tauware.de>  Mon, 11 Sep 2023 10:26:07 -0400
+
+golang-github-containers-image (5.25.0-9) unstable; urgency=medium
+
+  * upload to unstable
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sat, 09 Sep 2023 12:12:57 -0400
+
+golang-github-containers-image (5.25.0-8) experimental; urgency=medium
+
+  * work in experimental
+  * drop the vbauerster patch
+
+ -- Reinhard Tartler <siretart@tauware.de>  Mon, 04 Sep 2023 20:47:04 -0400
+
+golang-github-containers-image (5.25.0-7) experimental; urgency=medium
+
+  * sigstore workarounds require disabling signature_test.go
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sat, 02 Sep 2023 10:21:43 -0400
+
+golang-github-containers-image (5.25.0-6) experimental; urgency=medium
+
+  * Delete an additional sigstore reference
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sat, 02 Sep 2023 06:51:43 -0400
+
+golang-github-containers-image (5.25.0-5) experimental; urgency=medium
+
+  * Revert "also include testdata", fixes FTBFS
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sat, 02 Sep 2023 06:44:19 -0400
+
+golang-github-containers-image (5.25.0-4) experimental; urgency=medium
+
+  * Build against containers/libtrust instead of docker/libtrust
+  * Rework the sigstore patch: Disable rekor/fulcio specific dependencies
+  * Build depend on golang-github-theupdateframework-go-tuf-dev
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sun, 30 Jul 2023 10:12:35 -0400
+
+golang-github-containers-image (5.25.0-3) experimental; urgency=medium
+
+  * disable another sigstore reference
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sat, 29 Jul 2023 19:27:10 -0400
+
+golang-github-containers-image (5.25.0-2) experimental; urgency=medium
+
+  * Invert logic around buildtag logic for disabling sigstore to avoid
+    downstream packages having to set special buildtags
+  * patch alltransports.go to avoid dependency on openshift
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sat, 29 Jul 2023 18:16:29 -0400
+
+golang-github-containers-image (5.25.0-1) experimental; urgency=medium
+
+  * New upstream release
+  * Significantly expand the disable-cosign.patch
+  * Disable a couple of additional tests
+  * Revert to vbauerster/mbp version 7 (from 8)
+  * revise the libtrust patch until containers/libtrust comes out of NEW
+  * use GOFLAGS environment instead of passing on the commandline
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sat, 15 Jul 2023 07:16:52 -0400
+
+golang-github-containers-image (5.23.1+git20230116+3d22f4e96c53-1) experimental; urgency=medium
+
+  * New upstream snapshot
+    - referenced from podman/4.4.0+rc2
+  * Bump dependency on containers/storage >> 1.45
+
+ -- Reinhard Tartler <siretart@tauware.de>  Thu, 19 Jan 2023 03:44:35 -0500
+
+golang-github-containers-image (5.23.1-4) unstable; urgency=medium
+
+  * Team upload
+  * Add patch to recognize ArgsEscaped in OCI image config in tests
+
+ -- Shengjing Zhu <zhsj@debian.org>  Tue, 04 Apr 2023 00:45:57 +0800
+
+golang-github-containers-image (5.23.1-3) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Reinhard Tartler <siretart@tauware.de>  Thu, 24 Nov 2022 08:46:02 -0500
+
+golang-github-containers-image (5.23.1-2) experimental; urgency=medium
+
+  * Avoid golang-gcc, miscompiles on rivo/uniseg
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sat, 12 Nov 2022 16:05:45 -0500
+
+golang-github-containers-image (5.23.1-1) experimental; urgency=medium
+
+  * New upstream version
+
+ -- Reinhard Tartler <siretart@tauware.de>  Fri, 11 Nov 2022 20:04:17 -0500
+
+golang-github-containers-image (5.22.0-2) experimental; urgency=medium
+
+  * Build and install the 'sigstore' package
+
+ -- Reinhard Tartler <siretart@tauware.de>  Wed, 17 Aug 2022 10:16:29 +0200
+
+golang-github-containers-image (5.22.0-1) experimental; urgency=medium
+
+  * New upstream version
+  * refresh patches
+  * Bump standards version
+  * add disable-sigstore.patch: Code changes to disable image signing
+    functionality. Attempting to sign or verify images will fail with
+    an error until Debian ships with a copy of github.com/sigstore/sigstore
+
+ -- Reinhard Tartler <siretart@tauware.de>  Wed, 17 Aug 2022 09:45:11 +0200
+
+golang-github-containers-image (5.21.1-3) experimental; urgency=medium
+
+  * Tighten dependency on golang-github-opencontainers-image-spec-dev
+
+ -- Reinhard Tartler <siretart@tauware.de>  Wed, 18 May 2022 22:36:50 -0400
+
+golang-github-containers-image (5.21.1-2) experimental; urgency=medium
+
+  * revert upstream patch 7152f888b90d2f3cd7a633246ceba30f5cd49cc3
+  * refresh patches
+  * debian/copyright: update with 'cme update dpkg-copyright'
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sun, 15 May 2022 16:41:39 -0400
+
+golang-github-containers-image (5.21.1-1) experimental; urgency=medium
+
+  * New upstream version
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sun, 15 May 2022 07:18:12 -0400
+
+golang-github-containers-image (5.19.0-1) experimental; urgency=medium
+
+  * New upstream version
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sat, 05 Feb 2022 20:02:56 -0500
+
+golang-github-containers-image (5.17.0-1) experimental; urgency=medium
+
+  * New upstream version
+
+ -- Reinhard Tartler <siretart@tauware.de>  Tue, 11 Jan 2022 07:26:41 -0500
+
+golang-github-containers-image (5.16.0-3) unstable; urgency=medium
+
+  * Avoid autopkgtest failure
+
+ -- Reinhard Tartler <siretart@tauware.de>  Tue, 26 Oct 2021 13:09:20 -0400
+
+golang-github-containers-image (5.16.0-2) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Reinhard Tartler <siretart@tauware.de>  Mon, 25 Oct 2021 17:18:26 -0400
+
+golang-github-containers-image (5.16.0-1) experimental; urgency=medium
+
+  * New upstream release
+    - tighten dependency on containers/storage
+  * manpage-fixups.patch: fix some nroff/whatis warnings to ensure proper
+    whatis/apropos parsing
+  * Bump standards version, no changes needed
+
+ -- Reinhard Tartler <siretart@tauware.de>  Wed, 06 Oct 2021 15:45:59 -0400
+
+golang-github-containers-image (5.15.2-2) unstable; urgency=medium
+
+  * bump dependency on golang-github-vbauerster-mpb-dev
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sat, 28 Aug 2021 23:13:18 +0200
+
+golang-github-containers-image (5.15.2-1) unstable; urgency=medium
+
+  * New upstream version, closes: #992141
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sat, 28 Aug 2021 17:47:45 +0200
+
+golang-github-containers-image (5.12.0-2) experimental; urgency=medium
+
+  * New upstream version
+  * Tighten build-depends on golang-github-containers-storage
+
+ -- Reinhard Tartler <siretart@tauware.de>  Fri, 04 Jun 2021 23:59:06 -0400
+
+golang-github-containers-image (5.11.1-1) experimental; urgency=medium
+
+  * New upstream version
+  * Bump dependency on golang-github-vbauerster-mpb-dev
+
+ -- Reinhard Tartler <siretart@tauware.de>  Fri, 28 May 2021 12:03:31 -0400
+
+golang-github-containers-image (5.10.5-2) experimental; urgency=medium
+
+  * New upstream version
+
+ -- Reinhard Tartler <siretart@tauware.de>  Fri, 02 Apr 2021 17:20:56 -0400
+
+golang-github-containers-image (5.10.3-1) unstable; urgency=medium
+
+  * New upstream version, focused bugfix release targetted for podman 3.0
+  * Tighten build-depends on golang-github-containers-storage
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sun, 21 Feb 2021 16:01:53 -0500
+
+golang-github-containers-image (5.10.1-1) unstable; urgency=medium
+
+  * New upstream version 5.10.1
+  * Upload to unstable
+
+ -- Reinhard Tartler <siretart@tauware.de>  Tue, 02 Feb 2021 08:53:20 -0500
+
+golang-github-containers-image (5.9.0-1) experimental; urgency=medium
+
+  * New upstream version 5.9.0
+
+ -- Reinhard Tartler <siretart@tauware.de>  Mon, 14 Dec 2020 07:31:16 -0500
+
+golang-github-containers-image (5.8.1-3) unstable; urgency=medium
+
+  * upload to unstable
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sat, 05 Dec 2020 14:11:31 -0500
+
+golang-github-containers-image (5.8.1-2) experimental; urgency=medium
+
+  * Bump Standards-Version
+  * add explicit dependency on golang-github-moby-sys-dev, Closes: #976217
+  * Introduce extra package for documentation and configuration files
+
+ -- Reinhard Tartler <siretart@tauware.de>  Thu, 03 Dec 2020 08:52:23 -0500
+
+golang-github-containers-image (5.8.1-1) unstable; urgency=medium
+
+  * No sources need to be excluded
+  * New upstream version 5.8.1
+  * tighten dependency on containers/storage
+
+ -- Reinhard Tartler <siretart@tauware.de>  Mon, 23 Nov 2020 17:11:43 -0500
+
+golang-github-containers-image (5.6.0+dfsg1-1) unstable; urgency=medium
+
+  * debian/copyright: update using cme update dpkg-copyright
+  * debian/watch: add repacksuffix
+  * New upstream version 5.6.0
+  * Tighten build-depends on containers/storage
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sun, 22 Nov 2020 10:15:36 -0500
+
+golang-github-containers-image (5.5.2-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Update renamed lintian tag names in lintian overrides.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Reinhard Tartler ]
+  * New upstream version 5.5.2
+  * docker-libtrust: add patch documentation
+  * Update: Lintian overrides
+  * Bump standards version, no changes needed
+
+ -- Reinhard Tartler <siretart@tauware.de>  Thu, 10 Sep 2020 07:42:57 -0400
+
+golang-github-containers-image (5.5.1-3) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Reinhard Tartler <siretart@tauware.de>  Mon, 20 Jul 2020 07:15:32 -0400
+
+golang-github-containers-image (5.5.1-2) experimental; urgency=medium
+
+  * Tighten dependency on golang-github-vbauerster-mpb-dev
+
+ -- Reinhard Tartler <siretart@tauware.de>  Fri, 10 Jul 2020 19:50:38 -0400
+
+golang-github-containers-image (5.5.1-1) experimental; urgency=medium
+
+  * New upstream version: 5.5.1
+  * Tighten some dependencies
+
+ -- Reinhard Tartler <siretart@tauware.de>  Fri, 10 Jul 2020 08:29:09 -0400
+
+golang-github-containers-image (5.4.3-1) experimental; urgency=medium
+
+  * New upstream version 5.4.3
+  * Refresh patches
+
+ -- Reinhard Tartler <siretart@tauware.de>  Mon, 20 Apr 2020 07:33:15 -0400
+
+golang-github-containers-image (5.0.0-2) unstable; urgency=medium
+
+  * New upstream release.
+  * "golang-github-coreos-bbolt-dev (>= 1.3.3~)" (Closes: #947486).
+  * Install example "registries.conf".
+  * DH to version 12.
+  * Upload to unstable.
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Fri, 03 Jan 2020 06:50:03 +1100
+
+golang-github-containers-image (4.0.1-3) unstable; urgency=medium
+
+  * Removed "golang-github-docker-distribution-dev" from (Build-)Depends.
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Sun, 01 Dec 2019 04:14:01 +1100
+
+golang-github-containers-image (4.0.1-2) unstable; urgency=medium
+
+  * Install docs.
+  * Enabled tests.
+  * Enabled ostree support.
+  * Standards-Version: 4.4.1.
+  * Added myself to Uploaders.
+  * (Build-)Depends:
+    + golang-github-ostreedev-ostree-go-dev
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Mon, 11 Nov 2019 13:18:15 +1100
+
+golang-github-containers-image (4.0.1-1) unstable; urgency=medium
+
+  * New upstream version 4.0.1
+  * refresh patches
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sun, 20 Oct 2019 08:31:31 -0400
+
+golang-github-containers-image (3.0.2-2) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sat, 19 Oct 2019 21:55:07 -0400
+
+golang-github-containers-image (3.0.2-1) experimental; urgency=medium
+
+  [ Reinhard Tartler ]
+  * Initial release (Closes: #922842)
+  * backport storage options API
+
+  [ Dmitry Smirnov ]
+  * Clean-up "ostree-stub.patch" (better way to remove files than to un-patch them).
+  * (Build-)Depends: don't use transitional packages.
+
+  [ Reinhard Tartler ]
+  * New upstream version 3.0.2
+  * drop patches applied upstream
+  * add patch to built against golang-github-coreos-bolt-dev
+
+ -- Reinhard Tartler <siretart@tauware.de>  Tue, 01 Oct 2019 07:11:58 -0400

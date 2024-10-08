@@ -1,0 +1,22 @@
+From: Reinhard Tartler <siretart@tauware.de>
+Date: Wed, 10 Jul 2024 07:52:13 -0400
+Subject: Disable the signature test.
+
+This test requires starting and managing GPG Agent and is not easily
+done during a package build.
+
+===================================================================
+---
+ signature/simplesigning/signer_test.go | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/signature/simplesigning/signer_test.go b/signature/simplesigning/signer_test.go
+index e572eeb..655f612 100644
+--- a/signature/simplesigning/signer_test.go
++++ b/signature/simplesigning/signer_test.go
+@@ -1,3 +1,5 @@
++//go:build disable_gpg
++// +build disable_gpg
+ package simplesigning
+ 
+ import (

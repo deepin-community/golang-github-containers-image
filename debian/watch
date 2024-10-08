@@ -1,0 +1,7 @@
+# uscan(1) configuration file.
+version=4
+
+opts="\
+filenamemangle=s%(?:.*?)?v?@ANY_VERSION@(@ARCHIVE_EXT@)%@PACKAGE@-$1$2%" \
+  https://github.com/containers/image/tags \
+  (?:.*?/)?v?@ANY_VERSION@@ARCHIVE_EXT@

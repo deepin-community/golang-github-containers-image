@@ -1,0 +1,22 @@
+From: Reinhard Tartler <siretart@tauware.de>
+Date: Wed, 10 Jul 2024 07:51:57 -0400
+Subject: Avoid the dependency on openshift
+
+===================================================================
+---
+ transports/alltransports/alltransports.go | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/transports/alltransports/alltransports.go b/transports/alltransports/alltransports.go
+index a8f1c13..9cb5837 100644
+--- a/transports/alltransports/alltransports.go
++++ b/transports/alltransports/alltransports.go
+@@ -15,7 +15,7 @@ import (
+ 	_ "github.com/containers/image/v5/docker/archive"
+ 	_ "github.com/containers/image/v5/oci/archive"
+ 	_ "github.com/containers/image/v5/oci/layout"
+-	_ "github.com/containers/image/v5/openshift"
++	// _ "github.com/containers/image/v5/openshift"
+ 	_ "github.com/containers/image/v5/sif"
+ 	_ "github.com/containers/image/v5/tarball"
+ 	// The docker-daemon transport is registeredy by docker_daemon*.go
