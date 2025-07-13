@@ -38,7 +38,7 @@ index 7a4c24d..10c82d1 100644
  		runPathResolvingTestCase(t, resolveExistingPathToFullyExplicit, c, "")
  	}
 diff --git a/internal/image/docker_schema1_test.go b/internal/image/docker_schema1_test.go
-index ee3f311..445c83c 100644
+index 8e0c51c..cbc83e0 100644
 --- a/internal/image/docker_schema1_test.go
 +++ b/internal/image/docker_schema1_test.go
 @@ -524,6 +524,7 @@ func TestManifestSchema1ConvertToSchema2(t *testing.T) {
@@ -58,7 +58,7 @@ index ee3f311..445c83c 100644
  	// URLs, annotations, etc.) to an OCI image (which supports those fields),
  	// that UpdatedImage propagates the features to the converted manifest.
 diff --git a/internal/image/docker_schema2_test.go b/internal/image/docker_schema2_test.go
-index cf3b7f4..827d10f 100644
+index 53b1cd4..bae328f 100644
 --- a/internal/image/docker_schema2_test.go
 +++ b/internal/image/docker_schema2_test.go
 @@ -444,6 +444,7 @@ func modifiedLayerInfos(t *testing.T, input []types.BlobInfo) ([]types.BlobInfo,
