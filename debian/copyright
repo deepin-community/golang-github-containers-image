@@ -17,6 +17,7 @@ License: Apache-2.0
 
 Files: debian/*
 Copyright: 2019, Reinhard Tartler <siretart@tauware.de>
+           2024, Simon Josefsson <simon@josefsson.org>
 License: Apache-2.0
 Comment: Debian packaging is licensed under the same terms as upstream
 
