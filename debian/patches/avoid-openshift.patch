@@ -8,7 +8,7 @@ Subject: Avoid the dependency on openshift
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/transports/alltransports/alltransports.go b/transports/alltransports/alltransports.go
-index a8f1c13..9cb5837 100644
+index 0f4b7e3..7b41cff 100644
 --- a/transports/alltransports/alltransports.go
 +++ b/transports/alltransports/alltransports.go
 @@ -15,7 +15,7 @@ import (
