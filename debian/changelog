@@ -1,3 +1,47 @@
+golang-github-containers-image (5.34.2-1) unstable; urgency=medium
+
+  * New upstream release
+  * Tighten dependencies on containers/storage
+
+ -- Reinhard Tartler <siretart@tauware.de>  Mon, 17 Mar 2025 21:30:41 -0400
+
+golang-github-containers-image (5.34.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Tighten dependencies on containers/storage
+
+ -- Reinhard Tartler <siretart@tauware.de>  Tue, 11 Feb 2025 18:04:28 -0500
+
+golang-github-containers-image (5.33.1-1) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sun, 19 Jan 2025 16:06:44 -0500
+
+golang-github-containers-image (5.33.0-2) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sun, 17 Nov 2024 09:58:06 -0500
+
+golang-github-containers-image (5.33.0-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sat, 09 Nov 2024 09:48:18 -0500
+
+golang-github-containers-image (5.32.2-5) unstable; urgency=medium
+
+  * Team upload.
+  * Fix gbp.conf debian-branch.
+  * Drop golang-github-theupdateframework-go-tuf-dev B-D.
+  * Add Rules-Requires-Root: no.
+  * Bump debhelper-compat to 13.
+  * Silence lintian update-debian-copyright.
+  * Bump sigstore/rekor dependency to TUF-less.
+
+ -- Simon Josefsson <simon@josefsson.org>  Thu, 24 Oct 2024 10:50:10 +0200
+
 golang-github-containers-image (5.32.2-4) unstable; urgency=medium
 
   * Upload to unstable
